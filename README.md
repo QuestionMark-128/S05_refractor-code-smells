@@ -38,3 +38,14 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 2. Under "Source", select "GitHub Actions"
 3. The workflow will automatically deploy on pushes to the `main` branch
 4. Your site will be published at `https://<your-github-username>.github.io/<repository-name>/`
+
+## Changes Made
+
+1. smells
+   I found 3 smells that were a problem duplicate code, mysterious names, and comments.
+   Duplicate code was from the buttons and their event listeners. Mysterious names were the confusing names of variables and constants. I think there were too many comments that made the code confusing to read.
+
+2. Refractoring
+   I combined the event listeners for buttons into one and made it so it got everything about a certain button from an array. It holds what the buttons id is, the label the button will display, and the action it will do.
+   I then changed all the names for constants to things that make sense, like counter, buttons, increment, decrement, and reset.
+   I then simplified the comments to make it easier to navigate through the code.
